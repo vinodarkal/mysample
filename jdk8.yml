@@ -7,3 +7,9 @@
        name : java-1.8.0-openjdk
        state : present 
       when: ansible_os_family=="RedHat"
+    
+    - name: i want to install jdk8 ubuntu
+      apt: 
+       name : openjdk-8-jre
+       state : present 
+      when: ansible_os_family=="Debian"
