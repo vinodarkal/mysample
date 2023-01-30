@@ -5,14 +5,14 @@
      - name : i want to install tree 
        apt: 
          name : tree 
-         state: install 
+         state: present
 
      - name: i want to install wget 
        apt:
          name : wget
-         state : install
+         state : present
 
      - name : apache2
        apt: 
         name : apache2
-        state : install
+        state: present
