@@ -1,18 +1,18 @@
 ---
-- hosts: all
+- hosts: 172.31.1.142
   become : yes
   tasks : 
     - name : i want to install tree 
       apt: 
         name : tree 
-        state: install 
+        state: present
 
     - name: i want to install wget 
       apt:
         name : wget
-        state : install
+        state : present
 
     - name : apache2
       apt: 
        name : apache2
-       state : install
+       state : present
