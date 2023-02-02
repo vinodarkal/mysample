@@ -9,10 +9,10 @@
 
      - name: i want to install wget 
        apt:
-         name : wget
-         state : present
+          name : wget
+          state : present
 
      - name : apache2
        apt: 
-        name : apache2
-        state: present
+         name : apache2
+         state: present
